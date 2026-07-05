@@ -79,7 +79,7 @@ body {
 }
 
 .banner-left button {
-    padding: 14px 18px;
+    padding: 16px 22px;
     background: none;
     border: 2px solid #22AF86;
     border-radius: 10px;    
@@ -116,3 +116,65 @@ body {
     height: 350px;
 }
 
+/* why-choose-us  */
+
+.why-choose-us {
+    padding: 60px 40px;
+}
+
+.section-header {
+    text-align: center;    
+    width: 60%;
+    margin: 0 auto;
+    
+}
+
+.section-header h1{
+    margin: 0px;
+    color: #1F2937;
+    font-size: 45px;
+}
+
+.section-header h1 span{
+    color: #22AF86;
+}
+
+.section-header p{
+    color: #6b7280;
+}
+
+.why-choose-us-main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 70px;
+}
+
+.why-choose-us-card {
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    padding: 25px
+}
+
+.why-choose-us-card:hover {
+   border-color: #22AF86;
+}
+
+.why-choose-us-card .header-icon {    
+    width: 70px;
+    height: 70px;
+    background: #22AF86;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.why-choose-us-card h2 { 
+    color: #1F2937;
+}
+
+.why-choose-us-card p { 
+    color: #6b7280;
+}
