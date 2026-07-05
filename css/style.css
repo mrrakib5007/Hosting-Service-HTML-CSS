@@ -178,3 +178,133 @@ body {
 .why-choose-us-card p { 
     color: #6b7280;
 }
+
+/* choose-plan  */
+.choose-plan {
+    margin: 20px 0px;
+    padding: 70px 80px;
+    background: #dddddd96;
+}
+
+.choose-plan .card-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 70px;
+}
+
+.choose-plan .card-container .card{
+    background: white;
+    border: 1px solid white;
+    padding: 25px 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,.2);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.choose-plan .card-container .standard{
+    scale: calc(1.08);
+    transition: all 0.3s;
+    background-color: #22AF86;    
+}
+
+.choose-plan .card-container .standard .plan-category h2, 
+.choose-plan .card-container .standard .plan-price h3,
+.choose-plan .card-container .standard .plan-price span,
+.choose-plan .card-container .standard .plan-fetures p,
+.choose-plan .card-container .standard .plan-fetures span
+{
+     color: white !important;
+}
+
+.choose-plan .card-container .standard .choose-plan-btn button {
+    background: white;
+    color: #22AF86;
+}
+
+
+.choose-plan .card-container .standard:hover{
+    scale: calc(1);
+}
+
+.choose-plan .card-container .card:hover {
+    border: 1px solid #22af8780;
+}
+
+.choose-plan .card-container .standard .most-popular-badge {
+    background: #FCC31F;
+    width: 100px; 
+    padding: 8px; 
+    border-radius: 20px; 
+    font-size: 12px; 
+    font-weight: 600;
+    position: absolute; 
+    top: -15px;
+    right: 15px;
+}
+
+.card-container .card .plan-category h2{
+    color: #1F2937;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.card-container .card .plan-category h2{
+    color: #1F2937;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 0;    
+}
+
+.card-container .card .plan-price{      
+    margin: 20px 0;    
+}
+.card-container .card .plan-price h3{
+    color: #22AF86;
+    font-size: 50px;    
+    margin: 0;
+}
+
+.card-container .card .plan-price span{
+    text-transform: uppercase; 
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.card-container .card .plan-fetures {
+    text-align: left;
+    margin-bottom: 30px;
+    flex: 1;
+}
+
+.card-container .card .plan-fetures p{
+    margin: 0;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #1F2937;
+}
+
+.card-container .card .plan-fetures p span{ 
+    color: #22AF86;
+    font-weight: bold;
+}
+
+.card-container .card .choose-plan-btn{ 
+    margin: 20px 0;
+}
+
+.card-container .card .choose-plan-btn button{ 
+    width: 100%;
+    padding: 15px 0;
+    border: none;
+    background: #22AF86;
+    color: white;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
