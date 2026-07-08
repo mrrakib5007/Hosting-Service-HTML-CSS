@@ -463,3 +463,117 @@ body {
 .get-ready-section .get-ready-right button:hover {
     background: #007050;
 }
+
+/* footer-section style */
+
+.footer-section {
+    background: #0F172A;
+    padding: 3rem; 
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-section hr{
+    border: none;
+    height: 1px;
+    background: #64748b7a;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.footer-top-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.footer-grid-box {
+    max-width: 400px;
+}
+
+.footer-top-container .footer-logo {
+    color: white;
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+}
+
+.footer-top-container .footer-logo span {
+    color: var(--primary-color);
+}
+
+.footer-top-container .footer-description {
+    color: #d6d6d6;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.footer-top-container .footer-icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-top-container .footer-icons i {
+    font-size: 1.3rem;
+    color: var(--dark3-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.footer-top-container .footer-icons i:hover {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+}
+
+.footer-box {
+    padding: 0 1rem;
+}
+
+.footer-box h3 {
+    color: white;
+    margin-bottom: 0.7rem;
+    font-weight: 600;
+}
+
+.footer-box-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer-box-links a {
+    color: #94a3b8;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+
+.footer-credit-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    color: var(--dark3-color);
+}
+
+.footer-credit-container .footer-credit-text {
+    color: var(--dark3-color);    
+}
+
+.footer-credit-container .footer-credit-terms {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    
+}
+
+.footer-credit-container .footer-credit-terms a {
+    text-decoration: none;
+    color: var(--dark3-color); 
+    transition: all 0.3s;   
+}
+
+.footer-credit-container .footer-credit-terms a:hover {
+    text-decoration: underline;
+}
