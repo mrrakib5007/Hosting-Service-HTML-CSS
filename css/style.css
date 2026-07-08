@@ -1,8 +1,24 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* reset  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+
+}
+
+:root {
+    --primary-color: #22AF86;
+    --dark-color: #1F2937;
+    --dark3-color: #64748B;
+}
+
 body {
     max-width: 1280px;
-    margin: 0 auto;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 auto;    
 }
 
 .navbar {
@@ -10,7 +26,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    background: #22AF86;
+    background: var(--primary-color);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     height: 60px;
 
@@ -44,7 +60,7 @@ body {
  }
 
 .navlinks li:hover a {
-    color: #22AF86;    
+    color: var(--primary-color);    
  }
 
 
@@ -65,14 +81,14 @@ body {
 
 .banner-left h1{
     font-size: 55px;
-    color: #1F2937;
+    color: var(--dark-color);
 }
 
 .banner-left h1 span{
-    color: #22AF86;
+    color: var(--primary-color);
 }
 .banner-left p {
-    color: #6b7280;
+    color: var(--dark3-color);
     font-size: 20px;
     line-height: 1.6;
     margin-bottom: 25px;
@@ -81,7 +97,7 @@ body {
 .banner-left button {
     padding: 16px 22px;
     background: none;
-    border: 2px solid #22AF86;
+    border: 2px solid var(--primary-color);
     border-radius: 10px;    
     font-weight: 700;
     font-size: 16px;
@@ -90,17 +106,17 @@ body {
 }
 
 .banner-left #get-started-btn {
-    background: #22AF86;
+    background: var(--primary-color);
     color: white;
     
 }
 
 .banner-left #view-pricing-btn {
-    color: #22AF86;
+    color: var(--primary-color);
 }
 
 .banner-left #view-pricing-btn:hover {
-    background-color: #22AF86;
+    background-color: var(--primary-color);
     color: white;
 }
 
@@ -115,6 +131,7 @@ body {
     max-width: 100%;
     height: 350px;
 }
+
 
 /* why-choose-us  */
 
@@ -131,16 +148,17 @@ body {
 
 .section-header h1{
     margin: 0px;
-    color: #1F2937;
+    color: var(--dark-color);
     font-size: 45px;
 }
 
 .section-header h1 span{
-    color: #22AF86;
+    color: var(--primary-color);
 }
 
 .section-header p{
-    color: #6b7280;
+    color: var(--dark3-color);
+    margin: 0.8rem 0;
 }
 
 .why-choose-us-main {
@@ -153,17 +171,19 @@ body {
 .why-choose-us-card {
     border: 1px solid #dddddd;
     border-radius: 10px;
-    padding: 25px
+    padding: 25px;
+    transition: all 0.35s ease;
 }
 
 .why-choose-us-card:hover {
-   border-color: #22AF86;
+   border-color: var(--primary-color);
+    transform: translateY(-10px);
 }
 
 .why-choose-us-card .header-icon {    
     width: 70px;
     height: 70px;
-    background: #22AF86;
+    background: var(--primary-color);
     border-radius: 100%;
     display: flex;
     justify-content: center;
@@ -172,11 +192,12 @@ body {
 }
 
 .why-choose-us-card h2 { 
-    color: #1F2937;
+    color: var(--dark-color);
+    margin: 1rem 0;
 }
 
 .why-choose-us-card p { 
-    color: #6b7280;
+    color: var(--dark3-color);
 }
 
 /* choose-plan  */
@@ -208,7 +229,7 @@ body {
 .choose-plan .card-container .standard{
     scale: calc(1.08);
     transition: all 0.3s;
-    background-color: #22AF86;    
+    background-color: var(--primary-color);    
 }
 
 .choose-plan .card-container .standard .plan-category h2, 
@@ -222,7 +243,7 @@ body {
 
 .choose-plan .card-container .standard .choose-plan-btn button {
     background: white;
-    color: #22AF86;
+    color: var(--primary-color);
 }
 
 
@@ -247,14 +268,14 @@ body {
 }
 
 .card-container .card .plan-category h2{
-    color: #1F2937;
+    color: var(--dark-color);
     font-size: 25px;
     text-transform: uppercase;
     margin: 0;
 }
 
 .card-container .card .plan-category h2{
-    color: #1F2937;
+    color: var(--dark-color);
     font-size: 20px;
     text-transform: uppercase;
     margin: 0;    
@@ -264,7 +285,7 @@ body {
     margin: 20px 0;    
 }
 .card-container .card .plan-price h3{
-    color: #22AF86;
+    color: var(--primary-color);
     font-size: 50px;    
     margin: 0;
 }
@@ -285,11 +306,11 @@ body {
     margin: 0;
     font-size: 16px;
     margin-bottom: 10px;
-    color: #1F2937;
+    color: var(--dark-color);
 }
 
 .card-container .card .plan-fetures p span{ 
-    color: #22AF86;
+    color: var(--primary-color);
     font-weight: bold;
 }
 
@@ -301,10 +322,95 @@ body {
     width: 100%;
     padding: 15px 0;
     border: none;
-    background: #22AF86;
+    background: var(--primary-color);
     color: white;
     border-radius: 25px;
     font-size: 16px;
     font-weight: 500;
     cursor: pointer;
+}
+
+/* testimonials section design  */
+.testimonials {
+    margin: 5rem 0;
+    padding: 1.25rem;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin: 3rem 0;
+}
+
+.testimonial-card {
+    border: 1px solid #dddddd;
+    border-radius: 0.7rem;
+    padding: 1.5rem;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+    border-color: var(--primary-color);
+}
+
+.testimonial-card .quote-left-icon {
+    position: absolute;
+    font-size: 2.5rem;
+    color: #22af877e;
+    top: 1rem;
+    left: 1rem;
+}
+
+.testimonial-card .rattings {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.testimonial-card .rattings i {
+    font-size: 0.8rem;
+    color: #FCC31F;
+}
+
+.testimonial-card .client-review {
+    font-style: italic;
+    color: var(--dark-color);
+    line-height: 1.5;
+    font-size: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.testimonial-card .client-profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.testimonial-card .client-profile img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #22af87d5;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-card .client-profile .client-name {
+    margin: 0;
+    font-size: 1rem;
+    color: var(--dark-color);
+}
+
+.testimonial-card .client-profile .client-role {
+    margin: 0;
+    font-size: 0.8rem;
+    color: var(--dark3-color);
 }
